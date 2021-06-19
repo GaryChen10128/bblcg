@@ -104,7 +104,7 @@ t2x=Click(name='retry',scantime=3,
                   endsign=None,region=region1,
                   clicktimes=1,delay=dd,leftshift=sh)
 t3x=Click(name='retry',scantime=3,
-                  waitresponsetime=3,startsign=['./t3.png'],
+                  waitresponsetime=3,startsign=['./t32.png'],
                   endsign=None,region=region1,
                   clicktimes=1,delay=dd,leftshift=sh)
 t4x=Click(name='retry',scantime=3,
@@ -112,6 +112,7 @@ t4x=Click(name='retry',scantime=3,
                   endsign=None,region=region1,
                   clicktimes=1,delay=dd,leftshift=sh)
 time.sleep(2)
+# delayy=3
 while(True):
     retry.exevute()
     # pyautogui.moveRel(100,100,1)
@@ -137,7 +138,7 @@ while(True):
     # pyautogui.moveRel(100,100,1)
     t3.exevute()
     t3x.exevute()
-    
+    t3x.exevute()
     # time.sleep(0.3)
     # x,y=pyautogui.position().x+50,pyautogui.position().y+50
     # pyautogui.moveTo(x,y,0)
